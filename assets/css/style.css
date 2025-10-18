@@ -15,6 +15,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .heading-lv2 {
   color: #171100;
   font-size: 3.8rem;
@@ -57,6 +58,19 @@ a {
 }
 .nav {
   margin-left: auto;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
 }
 .main-content {
   width: 1170px;
@@ -267,6 +281,7 @@ a {
   margin-top: 55px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #c2dfda;
   background: #fff;
